@@ -10,8 +10,8 @@ deposit_term = int(input ("Please eneter the term of the deposit in days (1 year
 #deposit_term позволяет считать и для года и для меньшего и ли большего срока
 #формула дохода по вкладу на произвольный срок = D
 #D = депозит * размер годовой процентной ставки * количество дней, на которые размещается вклад / количество дней в году
-deposit = [per_cent.get('ТКБ')* money * deposit_term / 365,per_cent.get('СКБ')* money * deposit_term / 365,
-           per_cent.get('ВТБ')* money * deposit_term / 365,per_cent.get('СБЕР')* money * deposit_term / 365]
+deposit = [per_cent.get('ТКБ')* money * deposit_term / 365/100,per_cent.get('СКБ')* money * deposit_term / 365/100,
+           per_cent.get('ВТБ')* money * deposit_term / 365/100,per_cent.get('СБЕР')* money * deposit_term / 365/100]
 deposit_round=[round(v,3) for v in deposit]
 deposit_max = max(deposit)
 print (deposit_round)
