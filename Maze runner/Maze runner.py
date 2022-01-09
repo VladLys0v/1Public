@@ -1,5 +1,5 @@
 #the task was to find the exit from the maze which is located in the maze.txt file as a matrix
-#1 is the wall, 0 is the path
+#1 is the wall, 0 is the trail
 
 def found(pathArr, finPoint):
     weight = 1
